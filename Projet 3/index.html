@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <a-scene>
+            <!-- Utilisé comme un dossier (pour utiliser ressources) -->
+            <a-assets>
+                <img src="images/ciel.jpg" id="sky" alt="sky">
+                <img src="images/gazon.jpg" id="gazon" alt="gazon">
+            </a-assets>
+
+            <a-plane 
+                position="0 0 -4" 
+                rotation="-90 0 0" 
+                width="1000" 
+                height="1000" 
+                material="color:#FFFFFF; src:#gazon; repeat: 1000 1000;">
+            </a-plane>
+            <a-sky src="#sky"></a-sky>
+    
+        </a-scene>
+    </body>
+</html>
